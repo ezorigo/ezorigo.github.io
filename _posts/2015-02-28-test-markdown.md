@@ -32,18 +32,24 @@ Mart Jürisoo's data description:
 
 ```python
 # read the csv into a pandas dataframe
-
 import pandas as pd
 
 df = pd.read_csv('results.csv')
 
+print(df.shape)
+df.head()
 ```
-
+       | date	| home_team	| away_team	| home_score	| away_score	| tournament	| city	| country	| neutral|
+|------|------|-----------|-----------|------------|------------|------------|------|---------|--------|
+ **1** |  1872-11-30	| Scotland	| England	|0	|0	|Friendly	|Glasgow	|Scotland	|False    
+ **2** |1873-03-08	|England	|Scotland	|4	|2	|Friendly	|London|	England	|False
+ **3** |1874-03-07	|Scotland	|England	|2	|1	|Friendly|	Glasgow	|Scotland	False
+ **4** |1875-03-06	|England	Scotland|	2|	2	|Friendly	|London	|England|False
+ **5** |1876-03-04	|Scotland	|England	|3	|0	|Friendly|	Glasgow	|Scotland|	False
 ```python
 # check for NaN values
 
 df.isna().sum()
-
 ```
 
 ```python
@@ -57,7 +63,6 @@ city          0
 country       0
 neutral       0
 dtype: int64
-
 ```
 
 ![pic1][barplot]
