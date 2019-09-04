@@ -39,7 +39,9 @@ df = pd.read_csv('results.csv')
 print(df.shape)
 df.head()
 ```
- <table align="center" border="1" class="dataframe">
+
+ <center>
+ <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -122,7 +124,8 @@ df.head()
       <td>Glasgow, Scotland</td>
     </tr>
   </tbody>
-</table>
+ </table>
+ </center>
 
 ```python
 # check for NaN values
