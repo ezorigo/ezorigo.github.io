@@ -18,7 +18,7 @@ Mart Jürisoo's data description:
 
 >results.csv includes the following columns:
 
- * date - date of the match
+> * date - date of the match
  * home_team - the name of the home team
  * away_team - the name of the away team
  * home_score - full-time home team score including extra time, not including penalty-shootouts
