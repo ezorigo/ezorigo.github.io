@@ -28,7 +28,9 @@ Mart Jürisoo's data description:
 > * country - the name of the country where the match was played
 > * neutral - TRUE/FALSE column indicating whether the match was played at a neutral venue
 
-In [3]:
+### Let's read the csv into Pandas dataframe and do come cleaning if we have to
+
+```javascript
 # read the csv into a pandas dataframe
 
 import pandas as pd
@@ -37,14 +39,15 @@ df = pd.read_csv('results.csv')
 
 print(df.shape)
 df.head()
-(40839, 9)
-Out[3]:
-date	home_team	away_team	home_score	away_score	tournament	city	country	neutral
-0	1872-11-30	Scotland	England	0	0	Friendly	Glasgow	Scotland	False
-1	1873-03-08	England	Scotland	4	2	Friendly	London	England	False
-2	1874-03-07	Scotland	England	2	1	Friendly	Glasgow	Scotland	False
-3	1875-03-06	England	Scotland	2	2	Friendly	London	England	False
-4	1876-03-04	Scotland	England	3	0	Friendly	Glasgow	Scotland	False
+```
+<bound method DataFrame.to_html of         date home_team away_team  ...   country  neutral           Location
+0 1872-11-30  Scotland   England  ...  Scotland    False  Glasgow, Scotland
+1 1873-03-08   England  Scotland  ...   England    False    London, England
+2 1874-03-07  Scotland   England  ...  Scotland    False  Glasgow, Scotland
+3 1875-03-06   England  Scotland  ...   England    False    London, England
+4 1876-03-04  Scotland   England  ...  Scotland    False  Glasgow, Scotland
+
+[5 rows x 10 columns]>
 
 ![barplot1](https://github.com/ezorigo/ezorigo.github.io/blob/master/img/barplot1.png)
 
