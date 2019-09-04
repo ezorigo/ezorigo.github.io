@@ -39,16 +39,7 @@ df = pd.read_csv('results.csv')
 print(df.shape)
 df.head()
 ```
- <dl>
-       <bound method DataFrame.to_html of         date home_team away_team  ...   country  neutral           Location
-0 1872-11-30  Scotland   England  ...  Scotland    False  Glasgow, Scotland
-1 1873-03-08   England  Scotland  ...   England    False    London, England
-2 1874-03-07  Scotland   England  ...  Scotland    False  Glasgow, Scotland
-3 1875-03-06   England  Scotland  ...   England    False    London, England
-4 1876-03-04  Scotland   England  ...  Scotland    False  Glasgow, Scotland
-
-[5 rows x 10 columns]>
- </dl>
+ <table border="1" class="dataframe">\n  <thead>\n    <tr style="text-align: right;">\n      <th></th>\n      <th>date</th>\n      <th>home_team</th>\n      <th>away_team</th>\n      <th>home_score</th>\n      <th>away_score</th>\n      <th>tournament</th>\n      <th>city</th>\n      <th>country</th>\n      <th>neutral</th>\n      <th>Location</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>0</th>\n      <td>1872-11-30</td>\n      <td>Scotland</td>\n      <td>England</td>\n      <td>0</td>\n      <td>0</td>\n      <td>Friendly</td>\n      <td>Glasgow</td>\n      <td>Scotland</td>\n      <td>False</td>\n      <td>Glasgow, Scotland</td>\n    </tr>\n    <tr>\n      <th>1</th>\n      <td>1873-03-08</td>\n      <td>England</td>\n      <td>Scotland</td>\n      <td>4</td>\n      <td>2</td>\n      <td>Friendly</td>\n      <td>London</td>\n      <td>England</td>\n      <td>False</td>\n      <td>London, England</td>\n    </tr>\n    <tr>\n      <th>2</th>\n      <td>1874-03-07</td>\n      <td>Scotland</td>\n      <td>England</td>\n      <td>2</td>\n      <td>1</td>\n      <td>Friendly</td>\n      <td>Glasgow</td>\n      <td>Scotland</td>\n      <td>False</td>\n      <td>Glasgow, Scotland</td>\n    </tr>\n    <tr>\n      <th>3</th>\n      <td>1875-03-06</td>\n      <td>England</td>\n      <td>Scotland</td>\n      <td>2</td>\n      <td>2</td>\n      <td>Friendly</td>\n      <td>London</td>\n      <td>England</td>\n      <td>False</td>\n      <td>London, England</td>\n    </tr>\n    <tr>\n      <th>4</th>\n      <td>1876-03-04</td>\n      <td>Scotland</td>\n      <td>England</td>\n      <td>3</td>\n      <td>0</td>\n      <td>Friendly</td>\n      <td>Glasgow</td>\n      <td>Scotland</td>\n      <td>False</td>\n      <td>Glasgow, Scotland</td>\n    </tr>\n  </tbody>\n</table>
 
 ```python
 # check for NaN values
