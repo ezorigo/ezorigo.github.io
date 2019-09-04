@@ -10,7 +10,7 @@ comments: true
 
 **Work in progress**
 
-###Content
+### Content
 
 This dataset includes 40,838 results of international football matches starting from the very first official match in 1972 up to 2019. The matches range from FIFA World Cup to FIFI Wild Cup to regular friendly matches. The matches are strictly men's full internationals and the data does not include Olympic Games or matches where at least one of the teams was the nation's B-team, U-23 or a league select team.
 
@@ -30,14 +30,14 @@ Note on team and country names: For home and away teams the current name of the 
 
 For country names, the name of the country at the time of the match is used. So when Ghana played in Accra, Gold Coast in the 1950s, even though the names of the home team and the country don't match, it was a home match for Ghana. This is indicated by the neutral column, which says FALSE for those matches, meaning it was not at a neutral venue.
 
-<head>
-<!-- Plotly.js -->
-<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-</head>
-<body>
-<!-- Plotly chart will be drawn inside this DIV -->
-<div id="myDiv"></div>
-<script>
+ <head> 
+ <!-- Plotly.js -->
+ <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> 
+ </head> 
+ <body> 
+ <!-- Plotly chart will be drawn inside this DIV --> 
+ <div id="myDiv"></div> 
+ <script> 
 Plotly.d3.csv('https://raw.githubusercontent.com/ezorigo/Data-Storytelling/master/usasoccer.csv', function(err, rows){
 
     function unpack(rows, key) {
@@ -71,9 +71,9 @@ Plotly.d3.csv('https://raw.githubusercontent.com/ezorigo/Data-Storytelling/maste
 
     Plotly.plot(myDiv, data, layout, {showLink: false});
 
-});
-</script>
-</body>
+}); 
+ </script> 
+ </body> 
 
 
 ## Here is a secondary heading
