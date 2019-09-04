@@ -8,10 +8,11 @@ tags:
 comments: true
 ---
 
-**Work in progress**
+# **Work in progress**
 
-### Content
+### Dataset by [Mart Jürisoo](https://www.kaggle.com/martj42/international-football-results-from-1872-to-2017)
 
+from Mart J
 This dataset includes 40,838 results of international football matches starting from the very first official match in 1972 up to 2019. The matches range from FIFA World Cup to FIFI Wild Cup to regular friendly matches. The matches are strictly men's full internationals and the data does not include Olympic Games or matches where at least one of the teams was the nation's B-team, U-23 or a league select team.
 
 results.csv includes the following columns:
@@ -77,27 +78,6 @@ Plotly.d3.csv('https://raw.githubusercontent.com/ezorigo/Data-Storytelling/maste
  </script> 
  </body> 
 
-
-## Here is a secondary heading
-
-Here's a useless table:
-
-| Number | Next number | Previous number |
-| :------ |:--- | :--- |
-| Five | Six | Four |
-| Ten | Eleven | Nine |
-| Seven | Eight | Six |
-| Two | Three | One |
-
-
-How about a yummy crepe?
-
-![Crepe](https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg)
-
-It can also be centered!
-
-![Crepe](https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg){: .center-block :}
-
 Here's a code chunk:
 
 ~~~
@@ -124,21 +104,3 @@ var foo = function(x) {
 }
 foo(3)
 {% endhighlight %}
-
-## Boxes
-You can add notification, warning and error boxes like this:
-
-### Notification
-
-{: .box-note}
-**Note:** This is a notification box.
-
-### Warning
-
-{: .box-warning}
-**Warning:** This is a warning box.
-
-### Error
-
-{: .box-error}
-**Error:** This is an error box.
