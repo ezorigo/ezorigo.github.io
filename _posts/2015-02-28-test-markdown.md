@@ -10,10 +10,6 @@ comments: true
 
 # **Work in progress**
 
-Hello!
-
-Today, we're going to explore some data and see what we can find out. 
-
 #### Dataset by [Mart Jürisoo](https://www.kaggle.com/martj42/international-football-results-from-1872-to-2017)
 
 Mart Jürisoo's data description:
@@ -31,10 +27,28 @@ Mart Jürisoo's data description:
 > * city - the name of the city/town/administrative unit where the match was played
 > * country - the name of the country where the match was played
 > * neutral - TRUE/FALSE column indicating whether the match was played at a neutral venue
- 
->Note on team and country names: For home and away teams the current name of the team has been used. For example, when in 1882 a team who called themselves Ireland played against England, in this dataset, it is called Northern Ireland because the current team of Northern Ireland is the successor of the 1882 Ireland team. This is done so it is easier to track the history and statistics of teams.
 
->For country names, the name of the country at the time of the match is used. So when Ghana played in Accra, Gold Coast in the 1950s, even though the names of the home team and the country don't match, it was a home match for Ghana. This is indicated by the neutral column, which says FALSE for those matches, meaning it was not at a neutral venue.
+In [3]:
+# read the csv into a pandas dataframe
+
+import pandas as pd
+
+df = pd.read_csv('results.csv')
+
+print(df.shape)
+df.head()
+(40839, 9)
+Out[3]:
+date	home_team	away_team	home_score	away_score	tournament	city	country	neutral
+0	1872-11-30	Scotland	England	0	0	Friendly	Glasgow	Scotland	False
+1	1873-03-08	England	Scotland	4	2	Friendly	London	England	False
+2	1874-03-07	Scotland	England	2	1	Friendly	Glasgow	Scotland	False
+3	1875-03-06	England	Scotland	2	2	Friendly	London	England	False
+4	1876-03-04	Scotland	England	3	0	Friendly	Glasgow	Scotland	False
+
+![barplot1](https://github.com/ezorigo/ezorigo.github.io/blob/master/img/barplot1.png)
+
+![barplot2](https://github.com/ezorigo/ezorigo.github.io/blob/master/img/barplot2%20normalized.png)
 
  <head> 
  <!-- Plotly.js -->
@@ -77,16 +91,12 @@ Plotly.d3.csv('https://raw.githubusercontent.com/ezorigo/Data-Storytelling/maste
         }
     };
 
-    Plotly.plot(myDiv, scl, data, layout, {showLink: false});
+    Plotly.plot(myDiv, data, layout, {showLink: false});
 
 });
  </script> 
  </body> 
 
-
-![barplot1](https://github.com/ezorigo/ezorigo.github.io/blob/master/img/barplot1.png)
-
-![barplot2](https://github.com/ezorigo/ezorigo.github.io/blob/master/img/barplot2%20normalized.png)
 
 
 Here's a code chunk:
