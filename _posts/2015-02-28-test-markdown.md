@@ -30,15 +30,15 @@ Note on team and country names: For home and away teams the current name of the 
 
 For country names, the name of the country at the time of the match is used. So when Ghana played in Accra, Gold Coast in the 1950s, even though the names of the home team and the country don't match, it was a home match for Ghana. This is indicated by the neutral column, which says FALSE for those matches, meaning it was not at a neutral venue.
 
-		<head>
+<head>
 <!-- Plotly.js -->
-		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-		</head>
-		<body>
-		<!-- Plotly chart will be drawn inside this DIV -->
-		<div id="myDiv"></div>
-		<script>
-		Plotly.d3.csv('https://raw.githubusercontent.com/ezorigo/Data-Storytelling/master/usasoccer.csv', function(err, rows){
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+<!-- Plotly chart will be drawn inside this DIV -->
+<div id="myDiv"></div>
+<script>
+Plotly.d3.csv('https://raw.githubusercontent.com/ezorigo/Data-Storytelling/master/usasoccer.csv', function(err, rows){
 
     function unpack(rows, key) {
         return rows.map(function(row) { return row[key]; });
@@ -72,8 +72,8 @@ For country names, the name of the country at the time of the match is used. So 
     Plotly.plot(myDiv, data, layout, {showLink: false});
 
 });
-		</script>
-		</body>
+</script>
+</body>
 
 
 ## Here is a secondary heading
