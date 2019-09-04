@@ -39,7 +39,90 @@ df = pd.read_csv('results.csv')
 print(df.shape)
 df.head()
 ```
- <table alight="center" border="1" class="dataframe">\n  <thead>\n    <tr style="text-align: right;">\n      <th></th>\n      <th>date</th>\n      <th>home_team</th>\n      <th>away_team</th>\n      <th>home_score</th>\n      <th>away_score</th>\n      <th>tournament</th>\n      <th>city</th>\n      <th>country</th>\n      <th>neutral</th>\n      <th>Location</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>0</th>\n      <td>1872-11-30</td>\n      <td>Scotland</td>\n      <td>England</td>\n      <td>0</td>\n      <td>0</td>\n      <td>Friendly</td>\n      <td>Glasgow</td>\n      <td>Scotland</td>\n      <td>False</td>\n      <td>Glasgow, Scotland</td>\n    </tr>\n    <tr>\n      <th>1</th>\n      <td>1873-03-08</td>\n      <td>England</td>\n      <td>Scotland</td>\n      <td>4</td>\n      <td>2</td>\n      <td>Friendly</td>\n      <td>London</td>\n      <td>England</td>\n      <td>False</td>\n      <td>London, England</td>\n    </tr>\n    <tr>\n      <th>2</th>\n      <td>1874-03-07</td>\n      <td>Scotland</td>\n      <td>England</td>\n      <td>2</td>\n      <td>1</td>\n      <td>Friendly</td>\n      <td>Glasgow</td>\n      <td>Scotland</td>\n      <td>False</td>\n      <td>Glasgow, Scotland</td>\n    </tr>\n    <tr>\n      <th>3</th>\n      <td>1875-03-06</td>\n      <td>England</td>\n      <td>Scotland</td>\n      <td>2</td>\n      <td>2</td>\n      <td>Friendly</td>\n      <td>London</td>\n      <td>England</td>\n      <td>False</td>\n      <td>London, England</td>\n    </tr>\n    <tr>\n      <th>4</th>\n      <td>1876-03-04</td>\n      <td>Scotland</td>\n      <td>England</td>\n      <td>3</td>\n      <td>0</td>\n      <td>Friendly</td>\n      <td>Glasgow</td>\n      <td>Scotland</td>\n      <td>False</td>\n      <td>Glasgow, Scotland</td>\n    </tr>\n  </tbody>\n</table>
+ <table align="center" border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>date</th>
+      <th>home_team</th>
+      <th>away_team</th>
+      <th>home_score</th>
+      <th>away_score</th>
+      <th>tournament</th>
+      <th>city</th>
+      <th>country</th>
+      <th>neutral</th>
+      <th>Location</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1872-11-30</td>
+      <td>Scotland</td>
+      <td>England</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Friendly</td>
+      <td>Glasgow</td>
+      <td>Scotland</td>
+      <td>False</td>
+      <td>Glasgow, Scotland</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1873-03-08</td>
+      <td>England</td>
+      <td>Scotland</td>
+      <td>4</td>
+      <td>2</td>
+      <td>Friendly</td>
+      <td>London</td>
+      <td>England</td>
+      <td>False</td>
+      <td>London, England</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1874-03-07</td>
+      <td>Scotland</td>
+      <td>England</td>
+      <td>2</td>
+      <td>1</td>
+      <td>Friendly</td>
+      <td>Glasgow</td>
+      <td>Scotland</td>
+      <td>False</td>
+      <td>Glasgow, Scotland</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1875-03-06</td>
+      <td>England</td>
+      <td>Scotland</td>
+      <td>2</td>
+      <td>2</td>
+      <td>Friendly</td>
+      <td>London</td>
+      <td>England</td>
+      <td>False</td>
+      <td>London, England</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1876-03-04</td>
+      <td>Scotland</td>
+      <td>England</td>
+      <td>3</td>
+      <td>0</td>
+      <td>Friendly</td>
+      <td>Glasgow</td>
+      <td>Scotland</td>
+      <td>False</td>
+      <td>Glasgow, Scotland</td>
+    </tr>
+  </tbody>
+</table>
 
 ```python
 # check for NaN values
