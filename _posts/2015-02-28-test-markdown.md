@@ -28,33 +28,41 @@ Mart Jürisoo's data description:
 > * country - the name of the country where the match was played
 > * neutral - TRUE/FALSE column indicating whether the match was played at a neutral venue
 
-### Let's read the csv into Pandas dataframe and do come cleaning if we have to
+#### Let's read the csv into Pandas dataframe
 
-```javascript
+```python
 # read the csv into a pandas dataframe
 
 import pandas as pd
 
 df = pd.read_csv('results.csv')
 
-print(df.shape)
-df.head()
 ```
-<body>
-<bound method DataFrame.to_html of         date home_team away_team  ...   country  neutral           Location
-0 1872-11-30  Scotland   England  ...  Scotland    False  Glasgow, Scotland
-1 1873-03-08   England  Scotland  ...   England    False    London, England
-2 1874-03-07  Scotland   England  ...  Scotland    False  Glasgow, Scotland
-3 1875-03-06   England  Scotland  ...   England    False    London, England
-4 1876-03-04  Scotland   England  ...  Scotland    False  Glasgow, Scotland
 
-[5 rows x 10 columns]>
+```python
+# check for NaN values
 
-</body>
+df.isna().sum()
 
-![barplot1](https://github.com/ezorigo/ezorigo.github.io/blob/master/img/barplot1.png)
+```
 
-![barplot2](https://github.com/ezorigo/ezorigo.github.io/blob/master/img/barplot2%20normalized.png)
+```python
+date          0
+home_team     0
+away_team     0
+home_score    0
+away_score    0
+tournament    0
+city          0
+country       0
+neutral       0
+dtype: int64
+
+```
+
+![pic1][barplot]
+
+![pic2][barplot1]
 
  <head> 
  <!-- Plotly.js -->
@@ -131,3 +139,6 @@ var foo = function(x) {
 }
 foo(3)
 {% endhighlight %}
+
+[barplot]: (https://github.com/ezorigo/ezorigo.github.io/blob/master/img/barplot1.png)
+[barplot1]: (https://github.com/ezorigo/ezorigo.github.io/blob/master/img/barplot2%20normalized.png)
