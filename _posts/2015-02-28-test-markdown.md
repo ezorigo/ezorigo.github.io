@@ -10,7 +10,11 @@ comments: true
 
 # **Work in progress**
 
-### Dataset by [Mart Jürisoo](https://www.kaggle.com/martj42/international-football-results-from-1872-to-2017)
+Hello!
+
+Today, we're going to explore some data and see what we can find out. 
+
+#### Dataset by [Mart Jürisoo](https://www.kaggle.com/martj42/international-football-results-from-1872-to-2017)
 
 Mart Jürisoo's data description:
 
@@ -19,14 +23,14 @@ Mart Jürisoo's data description:
 >results.csv includes the following columns:
 
 > * date - date of the match
- * home_team - the name of the home team
- * away_team - the name of the away team
- * home_score - full-time home team score including extra time, not including penalty-shootouts
- * away_score - full-time away team score including extra time, not including penalty-shootouts
- * tournament - the name of the tournament
- * city - the name of the city/town/administrative unit where the match was played
- * country - the name of the country where the match was played
- * neutral - TRUE/FALSE column indicating whether the match was played at a neutral venue
+> * home_team - the name of the home team
+> * away_team - the name of the away team
+> * home_score - full-time home team score including extra time, not including penalty-shootouts
+> * away_score - full-time away team score including extra time, not including penalty-shootouts
+> * tournament - the name of the tournament
+> * city - the name of the city/town/administrative unit where the match was played
+> * country - the name of the country where the match was played
+> * neutral - TRUE/FALSE column indicating whether the match was played at a neutral venue
  
 >Note on team and country names: For home and away teams the current name of the team has been used. For example, when in 1882 a team who called themselves Ireland played against England, in this dataset, it is called Northern Ireland because the current team of Northern Ireland is the successor of the 1882 Ireland team. This is done so it is easier to track the history and statistics of teams.
 
@@ -46,7 +50,7 @@ Plotly.d3.csv('https://raw.githubusercontent.com/ezorigo/Data-Storytelling/maste
         return rows.map(function(row) { return row[key]; });
     }
 
-    var scl = [[0,	'rgb(166, 206, 227)'],[1,	'rgb(31, 120, 180)'],[2,	'rgb(178, 223, 138)'],[3,	'rgb(51, 160, 44)'],[4,	'rgb(251, 154, 153)'],[5,	'rgb(227, 26, 28)'],[6,	'rgb(253, 191, 111)'],[7,	'rgb(255, 127, 0)'],[8,	'rgb(202, 178, 214)'],[9,	'rgb(106, 61, 154)'],[10,	'rgb(255, 255, 153)']];
+    var scl = [[0.000000,'rgb(166,206,227)'],[0.090909,'rgb(31,120,180)'],[0.181818,'rgb(178,223,138)'],[0.272727,'rgb(51,160,44)'],[0.363636,'rgb(251,154,153)'],[0.454545,'rgb(227,26,28)'],[0.545455,'rgb(253,191,111)'],[0.636364,'rgb(255,127,0)'],[0.727273,'rgb(202,178,214)'],[0.818182,'rgb(106,61,154)'],[0.909091,'rgb(255,255,153)']];
 
     var data = [{
         type:'scattergeo',
@@ -73,11 +77,17 @@ Plotly.d3.csv('https://raw.githubusercontent.com/ezorigo/Data-Storytelling/maste
         }
     };
 
-    Plotly.plot(myDiv, data, layout, {showLink: false});
+    Plotly.plot(myDiv, scl, data, layout, {showLink: false});
 
 });
  </script> 
  </body> 
+
+
+![barplot1](https://github.com/ezorigo/ezorigo.github.io/blob/master/img/barplot1.png)
+
+![barplot2](https://github.com/ezorigo/ezorigo.github.io/blob/master/img/barplot2%20normalized.png)
+
 
 Here's a code chunk:
 
