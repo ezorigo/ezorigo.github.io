@@ -44,13 +44,15 @@ Plotly.d3.csv('https://raw.githubusercontent.com/ezorigo/Data-Storytelling/maste
         return rows.map(function(row) { return row[key]; });
     }
 
-    var scl = [[0.000000,	'rgb(166,206,227)'],[0.090909,	'rgb(31,120,180)'],[0.181818,	'rgb(178,223,138)'],[0.272727,	'rgb(51,160,44)'],[0.363636,	'rgb(251,154,153)'],[0.454545,	'rgb(227,26,28)'],[0.545455,	'rgb(253,191,111)'],[0.636364,	'rgb(255,127,0)'],[0.727273,	'rgb(202,178,214)'],[0.818182,	'rgb(106,61,154)'],[0.909091,	'rgb(255,255,153)']];
+    var scl = [[0,	'rgb(166, 206, 227)'],[1,	'rgb(31, 120, 180)'],[2,	'rgb(178, 223, 138)'],[3,	'rgb(51, 160, 44)'],[4,	'rgb(251, 154, 153)'],[5,	'rgb(227, 26, 28)'],[6,	'rgb(253, 191, 111)'],[7,	'rgb(255, 127, 0)'],[8,	'rgb(202, 178, 214)'],[9,	'rgb(106, 61, 154)'],[10,	'rgb(255, 255, 153)']];
 
     var data = [{
         type:'scattergeo',
+        locationmode: 'country names',
         lon: unpack(rows, 'long'),
         lat: unpack(rows, 'lat'),
-        text:  unpack(rows, 'text'),
+        hoverinfo: unpack(rows, 'text'),
+        text: unpack(rows, 'text'),
         mode: 'markers',
         marker: {
             colorscale: scl,
@@ -60,7 +62,7 @@ Plotly.d3.csv('https://raw.githubusercontent.com/ezorigo/Data-Storytelling/maste
 
 
     var layout = {
-        title: 'US International Soccer Matches Since 1885'
+        title: 'US International Soccer Matches Since 1885',
         geo: {
             scope: 'world',
             projection: {
@@ -71,7 +73,7 @@ Plotly.d3.csv('https://raw.githubusercontent.com/ezorigo/Data-Storytelling/maste
 
     Plotly.plot(myDiv, data, layout, {showLink: false});
 
-}); 
+});
  </script> 
  </body> 
 
