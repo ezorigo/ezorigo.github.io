@@ -40,6 +40,7 @@ df = pd.read_csv('results.csv')
 print(df.shape)
 df.head()
 ```
+<body>
 <bound method DataFrame.to_html of         date home_team away_team  ...   country  neutral           Location
 0 1872-11-30  Scotland   England  ...  Scotland    False  Glasgow, Scotland
 1 1873-03-08   England  Scotland  ...   England    False    London, England
@@ -48,6 +49,8 @@ df.head()
 4 1876-03-04  Scotland   England  ...  Scotland    False  Glasgow, Scotland
 
 [5 rows x 10 columns]>
+
+</body>
 
 ![barplot1](https://github.com/ezorigo/ezorigo.github.io/blob/master/img/barplot1.png)
 
